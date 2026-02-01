@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #101821;  /* Change to black after form */
+    color: #ffffff;
+}
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-icon svg {
+    display: inline-flex;
+    background: #5E18EA;
+    border: 1px solid  #5E18EA;
+    fill: #ffffff;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.contact-text {
+    text-align: center;
+}
+.contact-text h4 {
+    margin: 20px;
+    letter-spacing: 0.5px;
+    color: #ffffff; 
+    font-weight: 600;  
+    font-size: 40px;
+}
+.contact-text p {
+    color: #999;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4; 
+}
+
+/* Using here to reduce the font size once it gets to 325px */
+@media (max-width: 325px) {
+    .contact-text h4 {
+        font-size: 25px;
+    }
+    .contact-text p {
+        font-size: 13px;
+    }
+}
+.wavy-svg {
+    z-index: -3;
+}
+#form {
+    background: #ffffff;
+    width: 300px;
+    margin: 0 auto;
+    color: #000000;
+    padding: 25px;
+    border-radius: 7px;
+    font-size: 15px;
+}
+#form h1 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #000000; 
+}
+#form button  {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 15px;
+    background: #5E18EA;
+    color: #ffffff;
+}
+#form button:hover {
+    background: #7B4DFF;
+    transition: all 0.1s;
+}
+#form button svg {
+    position: relative;
+    bottom: 1px;
+}
+.input-control {
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0;
+}
+
+/* For the input field style */
+.input-control input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    outline: none;
+}
+.input-control input:hover {
+    border: 1px solid #7B4DFF;
+    transition: all 0.3s;
+}
+
+/* Using css rules for success and border if the user uses or skips the text field */
+.input-control.success input {
+    border-color: green;
+}
+.input-control.error input {
+    border-color: red;
+}
+.input-control .error {
+    color: red;
+    font-size: 12px;
+    font-weight: 300;
+    height: 12px;
+}
+
+
+
+.contact-icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    letter-spacing: 0.5px;
+    gap: 13px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.contact-icons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+}
+.contact-icons svg {
+    background: #7B4DFF;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 9px
+}
+.contact-icons h5  {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.names {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.names p {
+    font-size: 15px;
+    user-select: none;
+}
+@media (max-width: 767px) {
+    .contact-icons h5  {
+    font-size: 12px;
+    font-weight: 400;
+ }
+}
+
